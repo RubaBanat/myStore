@@ -1,12 +1,16 @@
 const express = require('express');
 require('dotenv').config();
-require('./database/db');
+require('./database/database');
 
-const productsRouter = require('./routers/routes/productsRoute')
+const productsRouter = require('./routers/routes/productsRoute');
+const cartRouter = require('./routers/routes/cartRoute');
+
 const app = express();
 
 app.use(express.json());
-app.use('/products' , productsRouter);
+
+app.use('/products', productsRouter);
+app.use('/cart', cartRouter);
 
 const PORT = process.env.PORT || 3030;
 
