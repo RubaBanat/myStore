@@ -8,14 +8,14 @@ function Footer() {
 		  <div className="container">
 			<div className="row">
 			  <div className="col">
-				<h2>About us</h2>
+				<h2 className='sub'>About us</h2>
 				<h6 className="list-unstyled">
 				  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 				</h6>
 			  </div>
 
 			  <div className="col">
-				<h2>Stuff</h2>
+				<h2 className='sub'>Stuff</h2>
 				<ui className="list-unstyled">
 				  <li>RUBA STUFF</li>
 				  <li>WALEED STUFF</li>
@@ -30,7 +30,7 @@ function Footer() {
                     alt="little"/>
 			  </div>
 			  <div className="col">
-				<h2>Contact us</h2>
+				<h2 className='sub'>Contact us</h2>
 				<ui className="list-unstyled">
 				  <li>RUBA BANAT</li>
 				  <li>OTHER STUFF</li>
@@ -38,7 +38,7 @@ function Footer() {
 				</ui>
 			  </div>
 			  <div className="col">
-				<h2>Reach us</h2>
+				<h2 className='sub'>Reach us</h2>
 				<h5 className="list-unstyled">
 				  <li>079-999-6969</li>
 				  <li>Jordan, Amman</li>

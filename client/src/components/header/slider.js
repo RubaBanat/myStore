@@ -1,9 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import {Carousel} from "react-bootstrap";
 import './slider.css';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Slideshow() {
+    useEffect(() => {
+		AOS.init({
+			offset: 200,
+			duration: 600,
+			easing: "ease-in-sine",
+			delay: 100,
+		});
+		AOS.refresh();
+	}, []);
 
     const [index, setIndex] = useState(0);
 
@@ -22,9 +32,8 @@ function Slideshow() {
                         
                         
                         />
-                    <Carousel.Caption>
+                    <Carousel.Caption  data-aos="flip-down" data-aos-delay="500">
                         <h3 style={{float:'left',fontSize:'50px',marginBottom:'130px'}}>Be Fashion Ready</h3>
-                        {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -36,9 +45,8 @@ function Slideshow() {
                        
                     />
 
-                    <Carousel.Caption>
+                    <Carousel.Caption  data-aos="flip-down">
                         <h3 style={{fontSize:'60px',marginBottom:'150px',float:'right'}}>Trendy Fashion</h3>
-                        {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -50,9 +58,8 @@ function Slideshow() {
                        
                     />
 
-                    <Carousel.Caption>
+                    <Carousel.Caption data-aos="flip-down">
                         <h3 style={{fontSize:'40px',marginBottom:'150px',float:'right'}}>It's All New , Latest Collection</h3>
-                        {/* <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

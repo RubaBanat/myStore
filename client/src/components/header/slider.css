@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Parisienne|Quicksand&display=swap');
 .slider{
     position: relative;
     top: 0;
@@ -6,5 +7,5 @@
 }
 h3{
     color: black;
-   ;
+    font-family: 'Quicksand';
 }

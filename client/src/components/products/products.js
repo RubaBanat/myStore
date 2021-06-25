@@ -4,33 +4,33 @@ import Product from './../product/product';
 const productsArr = [
 	{
 		id: 1,
-		title: 'anything',
+		title: 'Anything',
 		description: 'anything',
-		price: '100000000$',
+		price: '1000$',
 		image:
 			'https://alhootplus.com/wp-content/uploads/2021/03/iphone-12-pro-blue-hero.png',
 	},
 	{
 		id: 2,
-		title: 'anything',
+		title: 'Anything',
 		description: 'anything',
-		price: '100000000$',
+		price: '100$',
 		image:
 			'https://alhootplus.com/wp-content/uploads/2021/03/iphone-12-pro-blue-hero.png',
 	},
 	{
 		id: 3,
-		title: 'anything',
+		title: 'Anything',
 		description: 'anything',
-		price: '100000000$',
+		price: '10$',
 		image:
 			'https://alhootplus.com/wp-content/uploads/2021/03/iphone-12-pro-blue-hero.png',
 	},
 	{
 		id: 4,
-		title: 'anything',
+		title: 'Anything',
 		description: 'anything',
-		price: '100000000$',
+		price: '10000$',
 		image:
 			'https://alhootplus.com/wp-content/uploads/2021/03/iphone-12-pro-blue-hero.png',
 	},

@@ -2,10 +2,7 @@
 html, body {
 	height: 100%;
 	margin: 0;
-    /* background-color: rgb(243, 234, 217); */
-	/* background: linear-gradient(to bottom, #B67162, #E2BCB7); */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
+ 
 }
 .container {
 	height: 100%;
@@ -67,6 +64,7 @@ html, body {
 	padding: 14px;
 	margin-left: 2px;
 	font-family: 'Quicksand', sans-serif;
+	font-weight: bolder;
 	color: #000 !important;
 	cursor: pointer;
 	transition: 0.3s linear all;

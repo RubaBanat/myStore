@@ -1,0 +1,39 @@
+
+.cart{
+ 
+    width: 50vw;
+    align-items: center;
+    padding: 30px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.699);
+    margin: 2% 25% ;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+.cartImgs{
+  float: left;
+}
+.title{
+    /* float: left; */
+    align-items: center;
+    margin-left: 20%;
+}
+.delete{
+    float:right;
+}
+.total{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 2%;
+}
+.proceed{
+    width:10%;
+    background-color: #b76e78;
+    height:auto;
+}
+.price{
+    float:right;
+    margin-right: 10%;
+}
