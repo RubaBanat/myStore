@@ -8,7 +8,7 @@ const productsArr = [
 		description: 'anything',
 		price: '100000000$',
 		image:
-			'',
+			'https://alhootplus.com/wp-content/uploads/2021/03/iphone-12-pro-blue-hero.png',
 	},
 	{
 		id: 2,
@@ -16,7 +16,7 @@ const productsArr = [
 		description: 'anything',
 		price: '100000000$',
 		image:
-			'',
+			'https://alhootplus.com/wp-content/uploads/2021/03/iphone-12-pro-blue-hero.png',
 	},
 	{
 		id: 3,
@@ -24,7 +24,7 @@ const productsArr = [
 		description: 'anything',
 		price: '100000000$',
 		image:
-			'',
+			'https://alhootplus.com/wp-content/uploads/2021/03/iphone-12-pro-blue-hero.png',
 	},
 	{
 		id: 4,
@@ -32,23 +32,16 @@ const productsArr = [
 		description: 'anything',
 		price: '100000000$',
 		image:
-			'',
+			'https://alhootplus.com/wp-content/uploads/2021/03/iphone-12-pro-blue-hero.png',
 	},
 ];
 
-function Products() {
+function Products({ addToCart }) {
 	const [products, setProducts] = useState([]);
-	const [cart, setCart] = useState([]);
 
 	useEffect(() => {
-		setProducts([...productsArr, ...products]);
+		setProducts([...productsArr]);
 	}, []);
-
-	const addToCart = (pro) => {
-		const product = cart.find((cartPro) => pro.id === cartPro.id);
-
-		if (!product) setCart([...cart, pro]);
-	};
 
 	return (
 		<>
