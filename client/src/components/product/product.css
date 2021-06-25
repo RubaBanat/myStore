@@ -1,0 +1,82 @@
+.productsDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container3{
+    position: relative;
+    width: 150vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 30px;
+}
+.container3 .card3{
+position: relative;
+max-width: 100vw;
+height: 300px;
+background: #fff;
+margin: 30px 10px;
+padding: 20px 15px;
+display: flex;
+flex-direction: column;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+transition: 0.3s ease-in-out;
+}
+.container3 .card3:hover{
+    height: 60%;
+}
+.container3 .card3 .imgBx3{
+    position: relative;
+    width: 100%;
+    height: 210px;
+    top: -20px;
+    left: 1.5px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.container3 .card3 .imgBx3 img{
+    max-width: 100vw;
+    border-radius: 4px;
+    height: 100%;
+}
+.container3 .card3 .content3{
+    position: relative;
+    margin-top: -110px;
+    /* padding: 2px 15px; */
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.container3 .card3:hover .content3{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -20px;
+    transition-delay:0.2s ;
+}
+button{
+    background-color: #f1363fd5;
+    color: white;
+    border-radius: 8%;
+    width: 80%;
+    height: 20%;
+    cursor: pointer;
+    margin-top: 8%;
+    margin-bottom: 6%;
+   
+  }
+ .link{
+    text-decoration: none;
+    color: #fff;
+ }
+ .container3 .card3 .content3 p{
+     font-size: 20px;
+     margin-top: 2%;
+ }
+ .card3 h2{
+     text-align: center;
+     margin-top: 10%;
+     
+ }

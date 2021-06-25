@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Parisienne|Quicksand&display=swap');
+html, body {
+	height: 100%;
+	margin: 0;
+    /* background-color: rgb(243, 234, 217); */
+	/* background: linear-gradient(to bottom, #B67162, #E2BCB7); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+}
+.container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: #fff;
+    position: relative;
+    top: 0px;
+    z-index: 5;
+}
+.lead { font-family: 'Quicksand'; }
+.header-bar {
+	position: relative;
+	width: 70%;
+	min-width: 300px;
+	height: 110px;
+	border: 15px solid transparent;
+	border-top: 15px solid rgba(0, 0, 0, 0.74);
+	border-left: 15px solid rgba(0, 0, 0, 0.667);
+	box-shadow: 4px 4px 5px rgba(134, 128, 128, 0.25) inset;
+}
+.header-bar::after {
+	content: '';
+	position: absolute;
+	top: -8px;
+	right: -19px;
+	width: 30%;
+	height: 70px;
+	border: 15px solid transparent;
+	border-bottom: 15px solid rgba(46, 33, 33, 0.667);
+	border-right: 15px solid rgba(44, 32, 32, 0.667);
+	transition: 0.3s linear all;
+}
+.header-bar > .logo {
+	position: absolute;
+	top: calc(50% );
+	left: 10px;
+	transform: translateY(-50%);
+	color: rgba(14, 9, 9, 0.8);
+	font-family: 'Parisienne', cursive;
+    font-weight: bolder;
+	cursor: default;
+	user-select: none;
+}
+.slider-menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+.slider-menu > li a {
+	display: inline-flex;
+	padding: 14px;
+	margin-left: 2px;
+	font-family: 'Quicksand', sans-serif;
+	color: #000 !important;
+	cursor: pointer;
+	transition: 0.3s linear all;
+	user-select: none;
+    text-decoration: none !important;
+}
+.slider-menu > li a:hover {
+	color: #faa;
+	box-shadow: 0 50px 5px rgba(0, 0, 0, 0.15) inset;
+}
+.aeu-signature {
+	position: fixed;
+	top: 5px;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 15px;
+	line-height: 30px;
+	background-color: #fff;
+	padding: 5px 10px;
+	border-radius: 25px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.aeu-signature { font-family: "Quicksand"; }
+.aeu-signature > img { height: 30px; }

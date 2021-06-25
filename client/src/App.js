@@ -5,6 +5,8 @@ import Header from './components/header/header';
 import Products from './components/products/products';
 import Cart from './components/cart/cart';
 import Footer from './components/footer/footer';
+import Slideshow from './components/header/slider'
+
 
 function App() {
 	const [cart, setCart] = useState([]);
@@ -23,6 +25,7 @@ function App() {
 	return (
 		<>
 			<Header />
+			<Slideshow/>
 			<Switch>
 				<Route
 					exact

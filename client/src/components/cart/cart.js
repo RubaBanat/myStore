@@ -22,7 +22,7 @@ function Cart({ cart, deleteFromCart }) {
 					})}
 				</div>
 			) : (
-				<h1>ما في اشي</h1>
+				<h1>Your Cart is Empty </h1>
 			)}
 		</>
 	);
