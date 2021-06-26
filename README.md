@@ -1,4 +1,7 @@
-# myStore
+# My Little Shop
+
+![my-little-shop](./assets/my-Little-Shop.png)
+![my-little-shop](./assets/Little-Shop.png)
 
 ---
 

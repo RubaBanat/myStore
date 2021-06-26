@@ -28,7 +28,7 @@ function Product({ product, addToCart, showDetail }) {
 	);
 	return (
 		// <div className="productsDiv" data-aos="fade-left" data-aos-delay="500">
-			<div className="container3">
+			<div className="container3" >
 				<div className="card3">
 					<div className="imgBx3">
 						<img
@@ -39,7 +39,7 @@ function Product({ product, addToCart, showDetail }) {
 					</div>
 					<div className="content3">
 						<p> Price :{product.price}</p>
-						<OverlayTrigger
+						<OverlayTrigger 
 							placement="left"
 							delay={{ show: 250, hide: 400 }}
 							overlay={renderTooltip}
@@ -56,7 +56,7 @@ function Product({ product, addToCart, showDetail }) {
 							delay={{ show: 250, hide: 400 }}
 							overlay={renderTooltip2}
 						>
-							<span
+							<span 
 								style={{ marginLeft: '20%', cursor: 'pointer' }}
 								onClick={() => showDetail(product)}
 							>
@@ -72,3 +72,4 @@ function Product({ product, addToCart, showDetail }) {
 }
 
 export default Product;
+

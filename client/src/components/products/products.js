@@ -2,15 +2,17 @@ import React, { useState, useEffect } from 'react';
 import Product from './../product/product';
 import axios from 'axios';
 import './products.css';
+import demoProducts from './../../demoproduct';
 
 function Products({ addToCart, showDetail }) {
-	const [products, setProducts] = useState([]);
+	const [products, setProducts] = useState(demoProducts);
 
 	//eslint-disable-next-line
 	useEffect(async () => {
 		const { data } = await axios.get('http://localhost:3030/products');
 
-		setProducts([...data]);
+		setProducts([...products, ...data]);
+		//eslint-disable-next-line
 	}, []);
 
 	return (
