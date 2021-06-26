@@ -1,0 +1,13 @@
+ .details{
+    width: 100%;
+    color: black;
+    margin-top: 5%;
+}
+.productName{
+    text-align: center;
+    
+}
+.imgDetails{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

@@ -1,64 +1,39 @@
 import React, { useState, useEffect } from 'react';
 import Product from './../product/product';
+import axios from 'axios';
+import './products.css';
 
-const productsArr = [
-	{
-		id: 1,
-		title: 'Anything',
-		description: 'anything',
-		price: '1000$',
-		image:
-			'https://alhootplus.com/wp-content/uploads/2021/03/iphone-12-pro-blue-hero.png',
-	},
-	{
-		id: 2,
-		title: 'Anything',
-		description: 'anything',
-		price: '100$',
-		image:
-			'https://alhootplus.com/wp-content/uploads/2021/03/iphone-12-pro-blue-hero.png',
-	},
-	{
-		id: 3,
-		title: 'Anything',
-		description: 'anything',
-		price: '10$',
-		image:
-			'https://alhootplus.com/wp-content/uploads/2021/03/iphone-12-pro-blue-hero.png',
-	},
-	{
-		id: 4,
-		title: 'Anything',
-		description: 'anything',
-		price: '10000$',
-		image:
-			'https://alhootplus.com/wp-content/uploads/2021/03/iphone-12-pro-blue-hero.png',
-	},
-];
-
-function Products({ addToCart }) {
+function Products({ addToCart, showDetail }) {
 	const [products, setProducts] = useState([]);
 
-	useEffect(() => {
-		setProducts([...productsArr]);
+	//eslint-disable-next-line
+	useEffect(async () => {
+		const { data } = await axios.get('http://localhost:3030/products');
+
+		setProducts([...data]);
 	}, []);
 
 	return (
 		<>
 			{products.length ? (
-				<div>
+				<div className='cardsDiv'>
 					{products.map((product) => {
 						return (
 							<Product
-								key={product.id}
+								key={product.product_id}
 								product={product}
 								addToCart={addToCart}
+								showDetail={showDetail}
 							/>
 						);
 					})}
 				</div>
 			) : (
-				<h1>There are no products</h1>
+				<img
+					alt="img"
+					style={{ width: '20%', margin: 'auto auto auto 40%' }}
+					src="https://beautymarkjo.com/wp-content/uploads/2020/12/NoProductImage-1.png"
+				/>
 			)}
 		</>
 	);

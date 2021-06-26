@@ -11,7 +11,7 @@ function getCartProducts(req, res) {
 }
 
 function createCartProduct(req, res) {
-	const productId = req.body.id;
+	const productId = req.query.id;
 	const query = `INSERT INTO cart (product_id) VALUES (?);`;
 	const data = [productId];
 

@@ -5,7 +5,7 @@ CREATE TABLE product (
     title VARCHAR(255) NOT NULL,
     description LONGTEXT NOT NULL,
     price VARCHAR(255) NOT NULL,
-    image LONGBLOB NOT NULL
+    image VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE cart (
